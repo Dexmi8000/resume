@@ -1,0 +1,157 @@
+/* @font-face {
+    font-family: "Bebas Neue", sans-serif;
+    src: local("/fonts/BebasNeue-Regular.ttf"),
+      local("BebasNeue-Regular"),
+      url("BebasNeue-Regular.ttf") format("ttf");
+    font-weight: normal;
+  } */
+  @font-face {
+	font-family: 'eurostile-round-extended-medium'; 
+	src: url(fonts/eurostile-round-extended-medium.otf); 
+}
+@font-face {
+	font-family: 'Stengazeta-Regular_5'; 
+	src: url(fonts/Stengazeta-Regular_5.ttf); 
+}
+
+  
+  
+  /* body {
+    font-family: "Lexend Peta", sans-serif;
+  } */
+  
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 4px solid #8c8b8b;
+    background-image: linear-gradient(to right, #a6a6a6, #d8e7ed);
+    background-size: cover;
+}
+.header__text{
+    font-family: 'Stengazeta-Regular_5';
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    color: #5b5b5b;
+    padding-top: 4px;
+}
+
+.landing {
+    width: 100%;
+    height: 640px;
+
+    background-image: linear-gradient(to right, #fbeec1, #87773c);
+    background-size: cover;
+    border-bottom: 4px solid #8c8b8b;
+}
+
+.wrap {
+    height: 100%;
+    display: flex;
+}
+
+.wrap-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.wrap-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.landing__text {
+    font-family: 'eurostile-round-extended-medium';
+    font-size: 24px;
+}
+
+.img-link {
+    display: block;
+    width: 60%;
+}
+
+.landing__img {
+    width: 100%;
+    box-shadow: 5px 2px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+.mail__img {
+    width: 100%;
+    box-shadow: -5px -2px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+.mail {
+    width: 100%;
+    height: 640px;
+    background-image: linear-gradient(to right, #bc986a, #ebc99d);
+    background-size: cover;
+    border-bottom: 4px solid #8c8b8b;
+}
+
+.game {
+    width: 100%;
+    height: 640px;
+    background-image: linear-gradient(to right, #daad86, #99581f);
+    background-size: cover;
+}
+
+.game__img {
+    width: 100%;
+    box-shadow: 5px 2px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 425px) {
+    .header__text{
+        font-size: 48px;
+    }
+    .wrap{
+        flex-wrap: wrap;
+    }
+    .wrap-left{
+        width: 100%;
+        /* order: 1; */
+    }
+    .wrap-right{
+        width: 100%;
+    }
+    .landing{
+        height: 600px;
+    }
+    .landing__text{
+        font-size: 20px;
+        text-align: center;
+    }
+    .mail{
+        height: 540px;
+    }
+    }
